@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jadilson</title>
+        <link rel="stylesheet" href="style.css">
+        <link icon="/assets/plant.svg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+            
+        <form >
+            <img src="/assets/plant.svg" alt="uma mão cheia de terra com uma planta ">
+            <input id="email" type="email" name="fname" placeholder="Email"/>
+            <input id="senha" type="password" name="lname" placeholder="Senha">
+            
+            <img class="olho" onclick= "versenha()" src="/assets/eye.svg" >
+            <button onclick= "login()" type="button">Entrar</button>
+        </form>
+        
+    </body>
+    <script>
+
+
+
+          function somar() {
+            console.log("clicado");
+            var email = document.getElementById("email").value;
+            var   senha = document .getElementById("senha").value;
+            
+           var resultado= parseInt(email) + parseInt(senha);
+           
+           alert(resultado);
+          }
+          
+function versenha() {
+    var   teste = document .getElementById("senha").getAttribute("type");
+
+    if (teste === "password") {
+
+        document .getElementById("senha").setAttribute("type","text");
+        
+    } else {
+        document .getElementById("senha").setAttribute("type","password");
+    }
+
+}
+          function login() {
+
+            var emailpd = "reijan@mail.com";
+            var SenhaPadrao =  "123456";
+
+            var email = document.getElementById("email").value;
+            var senha = document .getElementById("senha").value;
+
+
+            if (emailpd === email && SenhaPadrao === senha) {
+                alert("parabens vc acertou")
+                
+                    
+                } else {
+                alert("email ou senha errados")
+                }
+          }
+            
+    </script>
+</html>
