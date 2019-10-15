@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    background-color:#fd3c65;
+    color: white; 
+    width: 150px;
+    padding: 8px ;
+    border: none;
+    border-radius:5px;
+    margin-top: 20px;
+    height:50px;
+    font-size:20px;
+   
+}
+
+form button:hover {
+    background-color: #c23654;
+}
+form input{
+    border: none;
+    border-radius:5px;
+    width: 300px;
+    padding: 10px 5px;
+    margin: 10px 0; 
+    height:50px;
+    font-size:20px;
+}
+form{
+    text-align: center;
+    border: 8px solid #7fbf00;
+    border-radius:20px;
+    padding: 20px;
+    width: 400px;
+    height:480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pass-input{
+    height: fit-content;
+    position: relative;
+}
+
+.olho{
+    
+    width:30px;
+    height:30px;
+    position: absolute;
+    top:20px;
+    right: 15px;
+    background-color:rgba(0,0,0,0);
+    color:black;
+
+}
+img{
+    width:111px;
+    height:111px;}
+
+.inscrito{
+    margin-top: 20px;
+    color: blue;
+}
